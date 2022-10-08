@@ -25,10 +25,10 @@ Node *findMiddle(Node *head) {
         c++;
         p=p->next;
     }
-    //cout<<"ok "<<c<<" ok ";
+    
     p=head;
- int pos=(c/2)+1;
-    for(int i=1;i<pos;i++){
+ int pos=(c/2);
+    while(pos--){
         p=p->next;
     }
     return p;
